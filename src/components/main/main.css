@@ -14,6 +14,10 @@
 }
 
 
+.link__movie{
+  display: inline-block;
+}
+
 .link__movie:hover{
   transform: scale(1.02);
   transition: 0.5s;
@@ -69,32 +73,5 @@ margin: 10px;
     width: 120px !important;
     height: 30px !important;
   }
-}
-
-@media (max-width:670px){
-  .skeleton__header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-  }
-  .skeleton-size{
-    width: 200px !important;
-    height: 200px !important;
-  }
-  .skeleton-sizes{
-    width: 170px !important;
-    height: 30px !important;
-  }
-  .skeleton-sizess{
-    width: 100px !important;
-    height: 30px !important;
-  }
-}
-
-@media (max-width:530px){
-  .skeleton{
-    width: 200px !important;
-  }
-
 }
 
