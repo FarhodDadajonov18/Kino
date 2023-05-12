@@ -1,0 +1,19 @@
+.category__button{
+  display: flex;
+  overflow-x :scroll;
+  max-width:1260px;
+  width: 100%;
+}
+
+.category__btn{
+  border: none;
+  background: transparent;
+  color: #f0eeee;
+  font-size: 16px;
+  margin: 10px;
+  background: #46444473;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

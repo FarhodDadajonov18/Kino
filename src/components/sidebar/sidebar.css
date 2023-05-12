@@ -1,0 +1,37 @@
+.sidebar__header{
+  width: 250px;
+
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid rgb(85, 85, 85);
+  transition: 0.3s;
+}
+
+
+
+
+.sidebar__inner{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.sidebar__inner:hover{
+  background-color: rgba(91, 85, 85, 0.444);
+}
+
+.btn__sidebar{
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.one{
+  margin-right: 17px;
+}
