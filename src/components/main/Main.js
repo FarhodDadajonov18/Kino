@@ -4,7 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./main.css";
 import CategoryButton from "../navbar/CategoryButton";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
 const Main = () => {
   const { movies, moviesLoading } = useSelector((state) => state.movieSlice);
   const dispatch = useDispatch();
@@ -18,10 +27,13 @@ const Main = () => {
       <CategoryButton />
       <div className="main__header">
         <Swiper
-          spaceBetween={50}
           slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
         >
           {movies.map((movie) => (
             <SwiperSlide key={movie.id}>
